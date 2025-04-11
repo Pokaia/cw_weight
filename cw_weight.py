@@ -38,24 +38,6 @@ morse_weights = {
     '7': 13,
     '8': 14,
     '9': 15,
-    '.': 1,
-    ',': 3,
-    '?': 2,
-    '!': 2,
-    "'": 4,
-    '/': 4,
-    '(': 5,
-    ')': 5,
-    '&': 4,
-    ':': 3,
-    ';': 4,
-    '=': 6,
-    '+': 4,
-    '-': 4,
-    '_': 7,
-    '"': 5,
-    '$': 8,
-    '@': 9
 }
 
 def calculate_cw_weight(input_text):
@@ -63,6 +45,7 @@ def calculate_cw_weight(input_text):
     for char in input_text.upper():
         if char in morse_weights:
             total_weight += morse_weights[char]
+        total_weight += 3
     return total_weight
 
 if __name__ == '__main__':
