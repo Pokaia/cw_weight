@@ -1,6 +1,7 @@
 import sys
 
 # Morse code weights for each character
+# Add comments to these CW (Morse code weights) to show the . - symbols for each character. AI!
 morse_weights = {
     'A': 5,
     'B': 9,
